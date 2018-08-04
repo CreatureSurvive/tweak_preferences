@@ -1,0 +1,133 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+    <dict>
+        <key>items</key>
+        <array>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>footerText</key>
+                <string>Weather information provided by libCSWeather</string>
+                <key>footerAlignment</key>
+                <integer>1</integer>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkListCell</string>
+                <key>detail</key>
+                <string>CSListItemsController</string>
+                <key>label</key>
+                <string>Weather Icon Style</string>
+                <key>key</key>
+                <string>kMLSWeatherIconStyle</string>
+                <key>default</key>
+                <string>kCurrentConditionImage_nc-variant</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Dark</string>
+                    <string>Light</string>
+                    <string>Light (small)</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <string>kCurrentConditionImage_black-variant</string>
+                    <string>kCurrentConditionImage_nc-variant</string>
+                    <string>kCurrentConditionImage</string>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>description</key>
+                <string>With libCSWeather comes the option to select the style of the weather icon used in the weather label.\n    • Dark = a black outline of the icon\n    • Light = the standard icons used for the stock weather widget\n    • Light (small) = the same as the 'Light' icon only smaller</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>seporatorHidden</key>
+                <true/>
+                <key>height</key>
+                <string>30</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>default</key>
+                <string>0.5</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kMLSWeatherIconScale</string>
+                <key>label</key>
+                <string>Icon Size Adjustment</string>
+                <key>placeholder</key>
+                <string>0.5</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>description</key>
+                <string>Any adjustments to this will result in the linspacing for the weather label being adjusted as well inorder to prevent the icon from overlapping with the text of the label. if you adjust this you'll probably also want to adjust your weather label position.</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSliderCell</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>default</key>
+                <real>0.5</real>
+                <key>min</key>
+                <real>0</real>
+                <key>max</key>
+                <real>1</real>
+                <key>isContinuous</key>
+                <true/>
+                <key>showValue</key>
+                <false/>
+                <key>key</key>
+                <string>kMLSWeatherIconScale</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>leftImage</key>
+                <string>glyphs/compress.png</string>
+                <key>rightImage</key>
+                <string>glyphs/resize diagonal.png</string>
+                <key>description</key>
+                <string>Any adjustments to this will result in the linspacing for the weather label being adjusted as well inorder to prevent the icon from overlapping with the text of the label. if you adjust this you'll probably also want to adjust your weather label position.</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>default</key>
+                <string>30</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>label</key>
+                <string>Weather Update Interval (minutes)</string>
+                <key>placeholder</key>
+                <string>30</string>
+                <key>key</key>
+                <string>kMLSWeatherUpdateInterval</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>description</key>
+                <string>Adjust how often the weather information is updated in minutes.\nIn the interest of not allways using LocationServices, any value under 5 minutes will default back to 5 minutes. The only exception to this is if the weather app updates and dicovers that your current location in a different city than the previous update, then it will immediatly fetch up to date weather information for that city</string>
+            </dict>
+
+        </array>
+        <key>title</key>
+        <string>Weather Options</string>
+    </dict>
+</plist>

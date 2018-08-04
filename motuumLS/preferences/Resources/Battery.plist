@@ -1,0 +1,201 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+	<dict>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>headerString</key>
+				<string>Battery</string>
+				<key>headerFont</key>
+				<string>.SFUIDisplay-Regular</string>
+				<key>primaryColor</key>
+				<string>#5eb5d8</string>
+				<key>primaryFontSize</key>
+				<real>30</real>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>:batteryOptionsState</string>
+				<key>default</key>
+				<string>BatteryState0</string>
+				<key>copyToTitlesAndKeys</key>
+				<dict>
+					<key>Default</key>
+					<string>0</string>
+					<key>Default With Notifications</key>
+					<string>1</string>
+					<key>Now Playing</key>
+					<string>2</string>
+					<key>Now Playing With Notifications</key>
+					<string>3</string>
+					<key>Today</key>
+					<string>4</string>
+					<key>Copy To All</key>
+					<string>-1</string>
+				</dict>
+				<key>label</key>
+				<string>Battery States</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Battery Colors</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSColorDisplayCell</string>
+				<key>defaultsPath</key>
+				<string>/Library/PreferenceBundles/motuumls.bundle</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>key</key>
+				<string>kMLSBatteryFillColorNormal</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>label</key>
+				<string>Normal Fill Color</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSColorDisplayCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaultsPath</key>
+				<string>/Library/PreferenceBundles/motuumls.bundle</string>
+				<key>key</key>
+				<string>kMLSBatteryFillColorLow</string>
+				<key>label</key>
+				<string>Low Battery Fill Color</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSColorDisplayCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaultsPath</key>
+				<string>/Library/PreferenceBundles/motuumls.bundle</string>
+				<key>key</key>
+				<string>kMLSBatteryBackgroundColor</string>
+				<key>label</key>
+				<string>Background Color</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSColorDisplayCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaultsPath</key>
+				<string>/Library/PreferenceBundles/motuumls.bundle</string>
+				<key>key</key>
+				<string>kMLSBatteryLabelColor</string>
+				<key>label</key>
+				<string>Text &amp; Bolt Color</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Battery Shape</string>
+				<key>footerText</key>
+				<string>Lower value squares the corners, higher value rounds the corners.</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>formatsDecimals</key>
+				<true/>
+				<key>seporatorHidden</key>
+				<true/>
+				<key>height</key>
+				<string>30</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<string>0.5</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>isDecimalPad</key>
+				<true/>
+				<key>key</key>
+				<string>kMLSBatteryCornerRadius</string>
+				<key>label</key>
+				<string>Battery Corner Radius</string>
+				<key>placeholder</key>
+				<string>0.5</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSliderCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<real>0.5</real>
+				<key>min</key>
+				<real>0</real>
+				<key>max</key>
+				<real>1</real>
+				<key>isContinuous</key>
+				<true/>
+				<key>showValue</key>
+				<false/>
+				<key>key</key>
+				<string>kMLSBatteryCornerRadius</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>leftImage</key>
+				<string>glyphs/speed less.png</string>
+				<key>rightImage</key>
+				<string>glyphs/speed more.png</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Show Battery Tip</string>
+				<key>key</key>
+				<string>kMLSBatteryTipEnabled</string>
+				<key>default</key>
+				<true/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+		</array>
+		<key>title</key>
+		<string>Battery Indicator</string>
+	</dict>
+</plist>

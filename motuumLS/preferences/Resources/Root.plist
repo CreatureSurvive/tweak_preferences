@@ -1,0 +1,813 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+	<dict>
+		<key>title</key>
+		<string>motuumLS</string>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPDatePickerCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<string>7</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>label</key>
+				<string>date picker</string>
+				<key>placeholder</key>
+				<string>7</string>
+				<key>key</key>
+				<string>dateTest</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Enabled</string>
+				<key>key</key>
+				<string>kMLSEnabled</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string/>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Notifications</string>
+				<key>label</key>
+				<string>Notifications</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Labels</string>
+				<key>label</key>
+				<string>Labels</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Battery</string>
+				<key>label</key>
+				<string>Battery</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>NowPlaying</string>
+				<key>label</key>
+				<string>Now Playing</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Weather</string>
+				<key>label</key>
+				<string>Weather</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Animation</string>
+				<key>label</key>
+				<string>Animation</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>General</string>
+				<key>label</key>
+				<string>General</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>CreatureCoding © 2017</string>
+				<key>footerAlignment</key>
+				<integer>1</integer>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSPCalloutCell</string>
+				<key>calloutColor</key>
+				<string>5eb5d8</string>
+				<key>pushToPlist</key>
+				<string>Support</string>
+				<key>label</key>
+				<string>Support &amp; Creator</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPBackupListViewController</string>
+				<key>isController</key>
+				<true/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>additionalDirectories</key>
+				<array>
+					<string>/User/Documents/motuumLS/backups</string>
+				</array>
+				<key>defaultsPath</key>
+				<string>/library/PreferenceBundles/motuumls.bundle/defaults.plist</string>
+				<key>label</key>
+				<string>Backup &amp; Restore</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPChangeLogController</string>
+				<key>isController</key>
+				<true/>
+				<key>label</key>
+				<string>ChangeLog</string>
+				<key>changes</key>
+				<array>
+					<dict>
+						<key>3.0.8.8</key>
+						<array>
+							<string>motuumLS is now free to use</string>
+							<string>fixed an issue causing notification contents to be cut off when using the option to remove notification headers</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.8.6</key>
+						<array>
+							<string>Fixed issue with activation where users couldn't activate the tweak after requesting a trial or purchasing, sorry for the mishap it was a careless 5AM mistake on my part</string>
+							<string>Changed the wording in the activation page and activation alerts to be more concise, it was originally a bit misleading</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.8.5</key>
+						<array>
+							<string>Official Public Release</string>
+							<string>Added support for multiple font sizes on labels.</string>
+							<string>Implemented free trials</string>
+							<string>Implemented purchases from within the settings</string>
+							<string>Minor optimizations for loading labels</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.7.1b</key>
+						<array>
+							<string>Fixed issue preventing weather from being loaded on date and time labels</string>
+							<string>Removed some debugging messages that would spam the springboard console</string>
+							<string>Removed CalendarForLockscreen fix, it looks like a recent update properly fixed CFL support and this is no longer needed</string>
+							<string>Added Initial support for coloring notification header text</string>
+							<string>Changed labels, no more unruly value labels in preferences, they are now concatenated down to 4 decimals.</string>
+							<string>Added keyboard extension for assisting with formatting on labels.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.7.0b</key>
+						<array>
+							<string>- 1200 lines later the notification cell options have been rewritten</string>
+							<string>- added noctis support to notification options</string>
+							<string>- added options to customize cells separately for widgets, banners, and regular notifications</string>
+							<string>- fixed typo that prevented ‘high’ temperature from loading</string>
+							<string>- fixed weather loading twice when creating labels</string>
+							<string>- adjusted algorithm for checking contrast between colors, should give more pleasant results for Legibility on notifications</string>
+							<string>- removed depreciated download manager (used for old font manager)</string>
+							<string>- removed depreciated font manager</string>
+							<string>- made a super useful little class for checking if 3rd party tweaks are installed and checking if their enabled or not</string>
+							<string>- archived old notification customization class, I’ll likely open source this later.</string>
+							<string>- cleaned up dependencies and unused frameworks in the makefile</string>
+							<string>- adjusted how states are handled with consolidation, notification state is only enabled when consolidation is showing notifications, and is disabled when consolidation is deselected</string>
+							<string>- added ‘Restore Defaults’ option back in, this is now a feature of libCSPreferences</string>
+							<string>- fixed some errors on the support page in settings</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.6.7b</key>
+						<array>
+							<string>- added notification/widget cell customization options ( these are alpha features they will improve with each release)</string>
+							<string>- rewrote notification positioning logic, should add better compatibility with consolidation and improve performance</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.6.5b</key>
+						<array>
+							<string>- hot fix for safemode crash on 10.2 devices caused by private API changes between 10.1.1 and 10.2</string>
+							<string>- fixes issue with default color values not being set on fresh installs due to a change in libCSColorPicker that I never updated in motuum</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.6.4b</key>
+						<array>
+							<string>- added options for coloring notifications/widgets</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.6.2b</key>
+						<array>
+							<string>- updated to use new features in libCSWeather and hopefully fixed the missing condition for the weather label</string>
+							<string>- hopefully fixed a random animation related crash when unlocking</string>
+							<string>- added option to force enable the statusbar time</string>
+							<string>- fixed animation bug causing black screen when waking your device</string>
+							<string>- preference cleanup</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.6.1b</key>
+						<array>
+							<string>- fixed broken defaults</string>
+							<string>- fixed makefile</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.6.0b</key>
+						<array>
+							<string>- fixed an issue that would cause the weather labels to be sized smaller than they should be, making the label display improperly</string>
+							<string>- moved state switching logic to a new method this improved scrolling performance a lot</string>
+							<string>- a lot of little tweaks to the preference panel (let me know if you see room for improvement)</string>
+							<string>- added some global animation options to the preference panel</string>
+							<string>- working on bringing back the ability to select a default page</string>
+							<string>- added the ability to enable/disable any label for any state</string>
+							<string>- general performance improvements for the labels</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.5.9b</key>
+						<array>
+							<string>- fixed an issue causing the weather label to not be added to the screen in some cases</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.5.8b</key>
+						<array>
+							<string>- fixed typo causing weather icon to display with the letter 'n'</string>
+							<string>- fixed bug causing preference changes to not apply immediately in some cases</string>
+							<string>- adds copy settings to all State pages in preferences</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.5.2b</key>
+						<array>
+							<string>- motuumLS is now run entirely off of libCSPreferences</string>
+							<string>- weather information is now provided by libCSWeather</string>
+							<string>- rewrote motuumLS labels</string>
+							<string>- massive refactoring in the project, striped out large amounts of code no longer needed since the preferences overhaul</string>
+							<string>- finally nailed the missing blurred artwork bug this time</string>
+							<string>- added weather options pane</string>
+							<string>- changed format options on weather label, (force touch on the weather labels format option to see a list of available options)</string>
+							<string>- added high and low weather info</string>
+							<string>- fixed horrible spring animation when swiping between pages while media was playing</string>
+							<string>- removed old preference panel</string>
+							<string>- updated defaults</string>
+							<string>- i'm sure there is more i'm forgetting to mention</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.4.1b</key>
+						<array>
+							<string>- Added dependency for libCSPreferences, I forgot to add this in the last 2 updates and it was causing crashes for some users</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.4.0b</key>
+						<array>
+							<string>- Hopefully I really fixed the missing blurred artwork this time (please report back if it is still broken)</string>
+							<string>- Now using font engine provided by libCSPreferences</string>
+							<string>- Stripped out some unneeded code</string>
+							<string>- Fixed up a ton of headers and all the makefiles to allow compilation on device</string>
+							<string>- [NOTE] as of this update I will begin depreciating features of the old preferences, the old preferences will be completely removed as soon as I figure out copying of settings for libCSPreferences</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.3.9b</key>
+						<array>
+							<string>- libCSPreferences integration (incomplete)</string>
+							<string>• You'll find a separate preference panel titled motuumLSBeta</string>
+							<string>- Fixed bugs where blurred artwork background would not always appear</string>
+							<string>- Fixed bug where labels would be strangely positioned while the alarm was showing</string>
+							<string>• This should have also fix the issue that would rarely occur when unlocking the device the labels would be offset to the left and partially off screen</string>
+							<string>- ColorFlow 3 now works on fresh install without needing to be configured</string>
+							<string>- Vibrancy effect on the labels is now forcibly disabled until some issues are fixed</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.3.2b</key>
+						<array>
+							<string>- Slight adjustment to CalendarForLockscreen2 support</string>
+							<string>- Fixed bug introduced in v3.0.3.0b that cause settings not to apply unless they were changed twice. hopefully this wont revert my fix for the random prefs reset bug. please let me know if you experience any issue with settings not applying or resetting by them selves.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.3.1b</key>
+						<array>
+							<string>- Fixed Calendar For Lockscreen 2 rendering above media controls making them impossible to interact with.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.3.0b</key>
+						<array>
+							<string>- Removed unneeded resources</string>
+							<string>- Fixed bug causing ColorFlow3 colors labels not to revert when closing now playing app</string>
+							<string>- Tweaked a few things with the legibility shadows, will be offering customizations options</string>
+							<string>- Fixed some bugs in the prefs controller, hopefully fixed issue causing some users preferences to reset at random. This issue is very hard to test due to its rarity, if you still experience this issue please let me know.</string>
+							<string>- Added iOS 11 style passcode (not customizable yet)</string>
+							<string>- Added shuffle/repeat controls (ALPHA currently buggy)</string>
+							<string>- Fixed bug causing some media controls not to color correctly with ColorFlow3</string>
+							<string>- Added positioning options for individual media controls(sorry the settings page is still a little disorganized)</string>
+							<string>- Tweaked animations they’re springy now (this will also be customizable)</string>
+							<string>- Adjusted how motuum handles missing artwork</string>
+							<string>- Optimizations to blurred artwork and its animation</string>
+							<string>- Optimizations to motuum's settings pageViewControllerBase</string>
+							<string>- Small changes to the settings pages</string>
+							<string>- Reworked parts of the default configuration, slightly better support for smaller screens.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.2.9b</key>
+						<array>
+							<string>- Fixed bug introduced in v3.0.2.7b where no changes in settings would save</string>
+							<string>- Fixed a number of bugs and issues in the globalPrefsProvider</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.2.7b</key>
+						<array>
+							<string>- Fixed corrupt defaults</string>
+							<string>- Fixed multiple bugs in reset to defaults</string>
+							<string>- Added a few missing defaults</string>
+							<string>- Fixed bugs in initial install</string>
+							<string>- Disabled darkening view on the today view page</string>
+							<string>- Scrolling left to right should be slightly snappier</string>
+							<string>- Minor optimizations and bug fixes in the Preference Controller</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.2.5b</key>
+						<array>
+							<string>- Fixed media control colors affecting the CC volume slider</string>
+							<string>- Added proper LockScreen dim timer you can now set the dim delay in seconds. please report any issues with this. (currently does not affect the today view)</string>
+							<string>- Added option to disable the status bar time</string>
+							<string>- Fixed a few layout issues in the default configuration</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.2.3b</key>
+						<array>
+							<string>- Added support back in for battery corner radius and tip</string>
+							<string>- Battery bolt color now matches text color</string>
+							<string>- Rewrote bezier path generation code</string>
+							<string>- fixed missing icon ic the preferences</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.2.1b</key>
+						<array>
+							<string>- Completely rewrote the battery indicator using a lot more efficient techniques.</string>
+							<string>- Removed Wave animation from the battery (for now)</string>
+							<string>- Fixed a bug in the settings that would cause your settings to be improperly applied, or sometimes reset to default</string>
+							<string>- Added apply all button to the Apply menu</string>
+							<string>- Copy Tweak List will now automatically upload your tweak list to ghostbin and then copy the link to your clipboard, you still have the option to copy as plane text</string>
+							<string>- Added a DeviceInformationProvider class to decouple and centralize data access and reduce static instance messages</string>
+							<string>- (upcoming)</string>
+							<string>• began working on custom preferences framework to assist in creating custom settings views</string>
+							<string>• began creating custom cells for all settings</string>
+							<string>• began work on a proper interface for the font picker</string>
+							<string>• started rewriting my format label implementation (once complete will boost motuumLS performance significantly)</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.1.10b</key>
+						<array>
+							<string>- Okay, not even kidding this time i really did fix the default settings seriously....</string>
+							<string>- Backup and Font directories are now automatically created</string>
+							<string>- Backups now live in 'var/mobile/Documents/motuumLS/backups/' like they should. existing backups will be moved automatically</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.1.9b</key>
+						<array>
+							<string>- Really this time i did update the default settings</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.1.8b</key>
+						<array>
+							<string>- Added Support For custom fonts (.ttf .ttc .otf .otc) place fonts in `var/mobile/Documents/motuumLS/fonts/`</string>
+							<string>- Added option to download fonts from direct links and install them (general options> experimental download font)</string>
+							<string>- Added (partially complete) apply settings to multiple states click the apply button in any label or battery state to apply to other states.</string>
+							<string>- Added wrapper around UIFont to support system fonts of weight/size via font name.</string>
+							<string>- More optimizations to the MLSPrefsController</string>
+							<string>- Fixed nasty bug in the battery indicator that would infinitely add items to an array if the battery size was set to 0, this was responsible for the lag and crashes in the last version.</string>
+							<string>- Created (not implemented) a download manager that will download/upload custom setups to the server in a future update.</string>
+							<string>- Fixed some bugs in the preference sliders (double tap should now work) values are now rounded to the nearest 2000th or 0.0005 to assist in snapping the positioning of elements.</string>
+							<string>- Updated defaults</string>
+							<string>- Preferences now automatically update between versions. you no longer need to keep resetting your preferences.</string>
+							<string>- Fixed settings crash when tapping the edit button that would show up when dismissing the keyboard</string>
+							<string>- Fixed save button not always appearing with the keyboard</string>
+							<string>- Battery indicator no longer requires a complete reload after switching states (currently has an occasional bug with the fill flickering)</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.1.1b</key>
+						<array>
+							<string>- Added option to disable artwork panning animation, and center the artwork</string>
+							<string>- Temporarily disabled new slider panning feature until some bugs are fixed</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.1.0b</key>
+						<array>
+							<string>- Switched to new change-log view with collapsable cells</string>
+							<string>- Added Battery Width option</string>
+							<string>- Added Battery Fluid animation</string>
+							<string>- Added Battery Shape options (support for more customization will be added in the future)</string>
+							<string>- Added getter method to label state manager to ensure state is never nil.</string>
+							<string>- Added 2 new image generation classes for some cool upcoming features</string>
+							<string>- Updated motuumLSPrefs color scheme to better suite dark-mode tweaks</string>
+							<string>- Added color scheme support to change-log</string>
+							<string>- Fixed Bug in the backup system that would cause colors and strings not to be restored inside the settings view.</string>
+							<string>- Added option to remove Volume slider on LS(this feature is not complete, will require respring if you've played music within 30 minutes of toggling)</string>
+							<string>- Improved Media Control coloring performance</string>
+							<string>- Fixed Bug causing blurred artwork not to show up when music is started from LS until the song is skipped</string>
+							<string>- Refactoring and performance improvements to the Now Playing View</string>
+							<string>- You can now disable/enable the battery on a per-state basis</string>
+							<string>- Double Tap sliders for manual value Input</string>
+							<string>- Drag in a sliders cell to fine tune the value/ or use as normally (similar to CCSmoothSlider)</string>
+							<string>- Added option to name backups</string>
+							<string>- Added option to share backups</string>
+							<string>- Added option to rename backups</string>
+							<string>- Improved performance in the MLSPrefs Provider</string>
+							<string>- Cleaned up project assets</string>
+							<string>- updated defaults</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.0.7b</key>
+						<array>
+							<string>- Fixed Battery Indicator appearing when disabled</string>
+							<string>- Fixed heavy lag when swiping between pages</string>
+							<string>- Added State titles so labels and battery settings</string>
+							<string>- Further optimized the update loop</string>
+							<string>- Updated Defaults(working on a more stock feeling default setup)</string>
+							<string>- Battery indicator now checks if LPM is on rather than checking if battery percentage is less than 20%</string>
+							<string>- Fixed up label/battery transitions</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.0.5b</key>
+						<array>
+							<string>- Fixed battery indicator positioning</string>
+							<string>- Fixed battery indicator fill</string>
+							<string>- Fixed battery indicator label</string>
+							<string>- Fixed unnatural label/battery positioning(it now behaves more how you'd expect)</string>
+							<string>- Fixed a lot of bugs in the State Manager for that last update</string>
+							<string>- Fixed label positioning bugs with notifications present</string>
+							<string>- Fixed cases where ColorFlow3 would not revert color of labels</string>
+							<string>- Refactored and optimized my preference manager (responsible for storing and sending preference values/updates to the rest of the tweak)</string>
+							<string>- Removed some depreciated code from the old positioning system</string>
+							<string>- Added transition animations to the battery/labels(this is not an actual battery animation)</string>
+							<string>- Lots of fixes to default values</string>
+							<string>- Fixed some bugs in the label options for when notifications are present</string>
+							<string>- you can now just tap anywhere on sliders to manually edit its value(i find that it works best if i don't tap the slider on the knob) it seams to be less of a hassle this way.</string>
+							<string>- Moved battery indicator and labels update loop to run on a background thread, should speed things up a little while transitioning between states</string>
+							<string>- Fixed more broken defaults</string>
+							<string>- Added new Backup/Restore system</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.0.3b</key>
+						<array>
+							<string>- Utilize full screen space for for everything</string>
+							<string>- you can now configure labels/battery options for these conditions</string>
+							<string>• Default</string>
+							<string>• Default With Notifications</string>
+							<string>• Now Playing</string>
+							<string>• Now Playing With Notifications</string>
+							<string>• TodayView</string>
+							<string>- uses normal sliders now instead of segmented sliders</string>
+							<string>- reorganized preferences</string>
+						</array>
+					</dict>
+					<dict>
+						<key>3.0.0.0b</key>
+						<array>
+							<string>- Updated Depiction page, Thats it this time</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.9.9</key>
+						<array>
+							<string>- fixes broken defaults (Hopefully fixes safemode issue introduced in v2.9.9.8)</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.9.8</key>
+						<array>
+							<string>- Added option to disable labels while showing notifications</string>
+							<string>- Added option to disable labels while not showing notifications or media controls</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.9.7</key>
+						<array>
+							<string>- More tweaks to the weather information wrapper</string>
+							<string>• Hopefully fixed some more issues of the weather not updating properly</string>
+							<string>• Removed redundant code in the weather information wrapper</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.9.6</key>
+						<array>
+							<string>- Rewrote code for weather information/updating</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.9.5</key>
+						<array>
+							<string>- Fixed blurred artwork persisting after now playing app has crashed</string>
+							<string>- Fixed ColorFlow label color persisting after now playing app has crashed</string>
+							<string>- Tweaked weather information updates</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.9</key>
+						<array>
+							<string>- Added Artwork Changed Animated transitions</string>
+							<string>- Fixed bug that would cause various elements not to restore to their proper state after media controls were removed.</string>
+							<string>- Added options to disable the Legibility Shadows behind labels</string>
+							<string>- Weather Label now updates when the weather information is updated (should fix an issue of the weather widget displaying more up to date information than the Label)</string>
+							<string>- Completely rewrote blur code</string>
+							<string>• Tint Color or Dominant Color</string>
+							<string>• Dominant Color Intensity (Intensity of the Dominant Color used for the tint, note: Tint Color Intensity is set through the colors alpha channel)</string>
+							<string>• Blur Radius</string>
+							<string>• Saturation</string>
+							<string>• Brightness</string>
+							<string>• Contrast</string>
+							<string>- Refactored all code for the panning artwork background</string>
+							<string>- Small performance/speed tweaks</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.8</key>
+						<array>
+							<string>- Fixed a bug causing the weather not to update properly in some cases</string>
+							<string>- Adjusted animations again</string>
+							<string>- Minor refactoring</string>
+							<string>- You can now set label position using the full width of the screen (working on making it so you can also use the full height of the screen as well)</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.7</key>
+						<array>
+							<string>- Fixed major bug causing gradually increasing lag &amp; an eventual crash (sorry for those of you that were effected by the bug);</string>
+							<string>• More information on the bug mentioned above, it turns out that none of the labels nor the battery indicator were ever being deallocated. in turn every time the device was locked/unlocked a new label/battery was being created, and the old one was still in memory. so the more times the device was used the greater the lag would become. this lag was primarily noticeable while trying to wake the screen.</string>
+							<string>- Further improved the Debug system</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.6</key>
+						<array>
+							<string>- Fixed layout issues in the labels help section</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.5</key>
+						<array>
+							<string>- Fixed (hide labels when playing media) being inverted. should work as intended now.</string>
+							<string>- Fixed labels truncating(... at the end of label) with certain formats</string>
+							<string>- Fixed blurred artwork not always filling the entire screen</string>
+							<string>- Fixed blurred artwork transition not animating</string>
+							<string>- Updated change-log</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.3</key>
+						<array>
+							<string>- Added option to disable date/time/weather labels while playing media (prefs>labels>hide labels when playing media)</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.9.2.5</key>
+						<array>
+							<string>- Removed CSColorPicker (CSColorPicker is now its own library that can be used by other tweaks, and has been removed from motuumLS, libCSColorPicker will be installed alongside motuumLS)</string>
+							<string>- Added LongPress action to prefs sliders to manually edit values.</string>
+							<string>- Added custom slider MLSSliderCell eventually will replace current prefs sliders</string>
+							<string>- Added copy tweak list button in settings</string>
+							<string>- Ran uncrustify on the entire Project</string>
+							<string>- Fixed notifications disappearing if music is started from LockScreen</string>
+							<string>- Fixed bug that caused blurred album art to show even when motuumLS was disabled</string>
+							<string>- Removed conflict with hotdog, i do not recommend using hotdog in combination with motuumLS. but if you'd like the option of having both installed while testing motuumLS then id recommend to keep one of them disabled.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.8.9.1</key>
+						<array>
+							<string>- New dateView transition animations</string>
+							<string>- Fixed artwork blur deleting itself</string>
+							<string>- Proper ColorFlow support</string>
+							<string>- Added ColorFlowDataProvider (CFWDataProvider)</string>
+							<string>- Organized nowPlaying classes</string>
+							<string>- Moved artwork blur to SBDashboard to render behind the date and in front of ColorFlow background</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.8.9</key>
+						<array>
+							<string>- Now prevents all update code from running when the screen is off or the LockScreen is not currently visible.</string>
+							<string>- Improves measures to prevent update code from running more than once per second</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.8.8</key>
+						<array>
+							<string>- Screen off notification now saves its value to MLSPrefsController</string>
+							<string>- Weather provider now sets update interval on prefs changed</string>
+							<string>- Now properly checks if screen is on/off</string>
+							<string>- Code no longer executes while screen is off</string>
+							<string>- Moved setup to didMoveToSuperview from layoutSubviews for SBFLockScreenDateView</string>
+							<string>- Now had proper DEBUG messages</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.8.6</key>
+						<array>
+							<string>- Added prefs check to add all keys to prefs</string>
+							<string>- Added CSLog, CSInfo, CSDebug, CSWarn, CSError wrappers</string>
+							<string>- Fixed artwork animation pausing when unlocking then locking</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.8.4</key>
+						<array>
+							<string>- Added support for Calendar for LockScreen</string>
+							<string>- Added option to disable screen wake when receiving notifications</string>
+							<string>- Added option to remove hint text on notifications (“Push For More”, “Slide For More”)</string>
+							<string>- Disabled the stock charging indicator</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.8.1</key>
+						<array>
+							<string>- Fixed HomeScreen labels being colored same as LockScreen StatusBar.</string>
+							<string>- Fixed weather not updating correctly.</string>
+							<string>- Fixed time not updating correctly</string>
+							<string>- Added option to select weather update interval (check the weather label options).</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.8</key>
+						<array>
+							<string>- Battery fix update</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.7.9</key>
+						<array>
+							<string>- Now Playing Initial Update</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.7.5</key>
+						<array>
+							<string>- Rewrote the entire Project</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.0.9</key>
+						<array>
+							<string>- Fixed preferences crash caused by having a color cell with no backing prefs information.</string>
+							<string>- Slight change to the color cell layout.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.0.6</key>
+						<array>
+							<string>- Fixed crash in preferences when scrolling to the bottom. caused by a stray cell leftover from testing. sorry about that.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>2.0.5</key>
+						<array>
+							<string>- Replaced libcolorpicker with a color picker of my own, that being said my new color picker has only been tested on my own device. if you have any issues/bugs with it or have some feedback for improvement please let me know.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.1.9</key>
+						<array>
+							<string>- Fixed issue with LockScreen pages defaulting to camera page when NoTodayView or other tweaks that modify LockScreen pages are installed.</string>
+							<string>- Working into another colorpicker method until libcolorpicker is updated, just bear with me.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.1.7</key>
+						<array>
+							<string>- Switched to a different color picker cell in an attempt to fix coloring issues with the battery indicator. sorry for the inconvenience, but it seems that this is an issue with libcolorpicker and i don't have much control over fixing it. once again please let me know if your still having issues with the coloring options.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.1.5</key>
+						<array>
+							<string>- Added option to select default LockScreen page hopefully fixed the issue with battery indicator coloring options not working. if you are still experiencing issues with this please let me know via the support button in the preferences page</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.1.0</key>
+						<array>
+							<string>- Added LockScreen Coloring options</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.0.8</key>
+						<array>
+							<string>- Fixed 404 error missing depiction</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.0.7</key>
+						<array>
+							<string>- Vibrant labels option</string>
+							<string>- Fixed some bugs with the battery indicator</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.0.3</key>
+						<array>
+							<string>- Added settings</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.0.1</key>
+						<array>
+							<string>- Initial Release</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSStaticTextCell</string>
+				<key>cellClass</key>
+				<string>CSPVersionCell</string>
+				<key>bundleID</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>label</key>
+				<string>Version:</string>
+			</dict>
+
+		</array>
+	</dict>
+</plist>

@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>title</key>
+		<string>Light Configuration</string>
+		<key>items</key>
+		<array>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkListCell</string>
+                <key>detail</key>
+                <string>CSListItemsController</string>
+                <key>label</key>
+                <string>StatusBar Style</string>
+                <key>key</key>
+                <string>k_LightStatusBarStyle</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Dark</string>
+                    <string>Light</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <integer>0</integer>
+                    <integer>1</integer>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkListCell</string>
+                <key>detail</key>
+                <string>CSListItemsController</string>
+                <key>label</key>
+                <string>Keyboard Style</string>
+                <key>key</key>
+                <string>k_LightKeyboardStyle</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Dark</string>
+                    <string>Light</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <integer>0</integer>
+                    <integer>1</integer>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+			</dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightInteractionTint</string>
+                <key>label</key>
+                <string>Interaction Tint</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Conversation List Cells</string>
+			</dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Use Gradient Conversation Bubbles</string>
+                <key>sublabel</key>
+                <string>This is experimental and subject to change</string>
+                <key>key</key>
+                <string>k_LightUseGradientConversationBubble</string>
+                <key>disableSpecifiers</key>
+                <array>
+                    <string>k_LightBubbleBackground</string>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightBubbleBackground</string>
+                <key>label</key>
+                <string>Conversation Bubble Background</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightCellFromLabel</string>
+                <key>label</key>
+                <string>Cell Sender Label</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightCellDateLabel</string>
+                <key>label</key>
+                <string>Cell Date Label</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightCellSummaryLabel</string>
+                <key>label</key>
+                <string>Cell Summary Label</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Backgrounds</string>
+			</dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Use Conversation List Background Image</string>
+                <key>key</key>
+                <string>k_LightUseConversationListBackgroundImage</string>
+                <key>disableSpecifiers</key>
+                <array>
+                    <string>k_LightConversationListBackground</string>
+                </array>
+                <key>enableSpecifiers</key>
+                <array>
+                    <string>k_LightConversationListBackgroundImage</string>
+                </array>
+                <key>sublabel</key>
+                <string>This is experimental and will change in the future</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightConversationListBackground</string>
+                <key>label</key>
+                <string>Conversation List Background</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSButtonCell</string>
+                <key>cellClass</key>
+                <string>CSPSideImageCell</string>
+                <key>height</key>
+                <string>81</string>
+                <key>key</key>
+                <string>k_LightConversationListBackgroundImage</string>
+                <key>label</key>
+                <string>Conversation List Background Image</string>
+                <key>sublabel</key>
+                <string>experimental feature</string>
+                <key>storePath</key>
+                <string>/User/Library/Preferences/bubbles/LightConversationListBackgroundImage.png</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Use Chat Background Image</string>
+                <key>key</key>
+                <string>k_LightUseChatListBackgroundImage</string>
+                <key>disableSpecifiers</key>
+                <array>
+                    <string>k_LightChatListBackground</string>
+                </array>
+                <key>enableSpecifiers</key>
+                <array>
+                    <string>k_LightChatListBackgroundImage</string>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightChatListBackground</string>
+                <key>label</key>
+                <string>Chat Background</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSButtonCell</string>
+                <key>cellClass</key>
+                <string>CSPSideImageCell</string>
+                <key>height</key>
+                <string>81</string>
+                <key>key</key>
+                <string>k_LightChatListBackgroundImage</string>
+                <key>label</key>
+                <string>Chat Background Image</string>
+                <key>storePath</key>
+                <string>/User/Library/Preferences/bubbles/LightChatListBackgroundImage.png</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Navigation Bar</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightNavigationBarBackground</string>
+                <key>label</key>
+                <string>Navigation Bar Background</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightNavigationBarTitle</string>
+                <key>label</key>
+                <string>Navigation Bar Title</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightNavigationBarButtons</string>
+                <key>label</key>
+                <string>Navigation Bar Buttons</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Chat Bubble Backgrounds</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightIncomingBubble</string>
+                <key>label</key>
+                <string>Incoming Message Bubble</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightIMessageBubble</string>
+                <key>label</key>
+                <string>iMessage Bubble</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightSMSBubble</string>
+                <key>label</key>
+                <string>SMS Bubble</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightAttachmentBubble</string>
+                <key>label</key>
+                <string>Attachment Bubble</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Bubble Tails</string>
+                <key>key</key>
+                <string>k_LightBubbleTails</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Bubble Borders Only (No Fill)</string>
+                <key>key</key>
+                <string>k_LightBubbleBordersOnly</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Bubble Square Corners</string>
+                <key>sublabel</key>
+                <string>currently doesn't work with 'Borders Only' option</string>
+                <key>key</key>
+                <string>k_LightBubbleCornersNone</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Chat Bubble Text</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightIncomingText</string>
+                <key>label</key>
+                <string>Incoming Message Text</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightIMessageText</string>
+                <key>label</key>
+                <string>iMessage Text</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightSMSText</string>
+                <key>label</key>
+                <string>SMS Text</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Chat Bubble Links</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightIncomingLink</string>
+                <key>label</key>
+                <string>Incoming Message Link</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightIMessageLink</string>
+                <key>label</key>
+                <string>iMessage Link</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightSMSLink</string>
+                <key>label</key>
+                <string>SMS Link</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Chat Send Buttons</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightIMessageSendButton</string>
+                <key>label</key>
+                <string>iMessage Send Button</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightSMSSendButton</string>
+                <key>label</key>
+                <string>SMS Send Button</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Chat Entry Field</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightEntryText</string>
+                <key>label</key>
+                <string>Chat Entry Text</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightEntryFill</string>
+                <key>label</key>
+                <string>Chat Entry Fill</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightEntryBorder</string>
+                <key>label</key>
+                <string>Chat Entry Border</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Chat Entry Field Background</string>
+			</dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Entry Field Background Blur</string>
+                <key>key</key>
+                <string>k_LightEntryBackgroundBlur</string>
+                <key>isInvertedGroupToggle</key>
+                <true/>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightEntryBackground</string>
+                <key>label</key>
+                <string>Chat Entry Background Color</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Chat General Colors</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightChatInfoText</string>
+                <key>label</key>
+                <string>Chat Detail Text</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <!-- <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightAcknowledgmentIcon</string>
+                <key>label</key>
+                <string>Chat Acknowledgment Icon</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict> -->
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightTypingDot</string>
+                <key>label</key>
+                <string>Chat Typing Dots</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightBrowserBar</string>
+                <key>label</key>
+                <string>Chat App Drawer Background</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightChatFooter</string>
+                <key>label</key>
+                <string>Chat Footer</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+            <dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+                <key>label</key>
+                <string>Compose View Contact Name Colors</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightComposeRecipientTextDefault</string>
+                <key>label</key>
+                <string>Default Contact Name</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightComposeRecipientTextIMessage</string>
+                <key>label</key>
+                <string>iMessage Contact Name</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>key</key>
+                <string>k_LightComposeRecipientTextSMS</string>
+                <key>label</key>
+                <string>SMS Contact Name</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/bubbles.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+		</array>
+	</dict>
+</plist>

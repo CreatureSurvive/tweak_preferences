@@ -1,0 +1,177 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+	<dict>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Label Options</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>headerString</key>
+				<string>Time Label</string>
+				<key>headerFont</key>
+				<string>.SFUIDisplay-Regular</string>
+				<key>primaryColor</key>
+				<string>#5eb5d8</string>
+				<key>primaryFontSize</key>
+				<real>30</real>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>:timeOptionsState</string>
+				<key>default</key>
+				<string>TimeLabel0</string>
+				<key>label</key>
+				<string>Time Label</string>
+				<key>copyToTitlesAndKeys</key>
+				<dict>
+					<key>Default</key>
+					<string>0</string>
+					<key>Default With Notifications</key>
+					<string>1</string>
+					<key>Now Playing</key>
+					<string>2</string>
+					<key>Now Playing With Notifications</key>
+					<string>3</string>
+					<key>Today</key>
+					<string>4</string>
+					<key>Copy To All</key>
+					<string>-1</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>headerString</key>
+				<string>Date Label</string>
+				<key>headerFont</key>
+				<string>.SFUIDisplay-Regular</string>
+				<key>primaryColor</key>
+				<string>#5eb5d8</string>
+				<key>primaryFontSize</key>
+				<real>30</real>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>:dateOptionsState</string>
+				<key>default</key>
+				<string>DateLabel0</string>
+				<key>label</key>
+				<string>Date Label</string>
+				<key>copyToTitlesAndKeys</key>
+				<dict>
+					<key>Default</key>
+					<string>0</string>
+					<key>Default With Notifications</key>
+					<string>1</string>
+					<key>Now Playing</key>
+					<string>2</string>
+					<key>Now Playing With Notifications</key>
+					<string>3</string>
+					<key>Today</key>
+					<string>4</string>
+					<key>Copy To All</key>
+					<string>-1</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>headerString</key>
+				<string>Weather Label</string>
+				<key>headerFont</key>
+				<string>.SFUIDisplay-Regular</string>
+				<key>primaryColor</key>
+				<string>#5eb5d8</string>
+				<key>primaryFontSize</key>
+				<real>30</real>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>:weatherOptionsState</string>
+				<key>default</key>
+				<string>WeatherLabel0</string>
+				<key>label</key>
+				<string>Weather Label</string>
+				<key>copyToTitlesAndKeys</key>
+				<dict>
+					<key>Default</key>
+					<string>0</string>
+					<key>Default With Notifications</key>
+					<string>1</string>
+					<key>Now Playing</key>
+					<string>2</string>
+					<key>Now Playing With Notifications</key>
+					<string>3</string>
+					<key>Today</key>
+					<string>4</string>
+					<key>Copy To All</key>
+					<string>-1</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Hide Labels When Playing Media</string>
+				<key>key</key>
+				<string>kMLSHideDateViewWithMedia</string>
+				<key>default</key>
+				<true/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Hide Labels When No Media &amp; No Notifications</string>
+				<key>key</key>
+				<string>kMLSDateViewHideWithDefault</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Hide Labels When Showing Notifications</string>
+				<key>key</key>
+				<string>kMLSDateViewHideWithNotifications</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+		</array>
+		<key>title</key>
+		<string>Labels</string>
+	</dict>
+</plist>

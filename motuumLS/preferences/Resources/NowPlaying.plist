@@ -1,0 +1,165 @@
+<!--
+   kMLSArtworkBlurEnabled
+   kMLSArtworkBlurUseDominantColor
+   kMLSArtworkBlurTintColor
+   kMLSArtworkBlurRadius
+   kMLSArtworkBlurSaturation
+   kMLSArtworkBlurTransitionLength
+   kMLSArtworkBlurPanningSpeed
+   -->
+
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+    <dict>
+        <key>items</key>
+        <array>
+
+            <dict>
+                <key>action</key>
+                <string>pushToView:</string>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>pushToPlist</key>
+                <string>ArtworkBlur</string>
+                <key>label</key>
+                <string>Artwork Blur</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string/>
+            </dict>
+
+            <dict>
+                <key>action</key>
+                <string>pushToView:</string>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>pushToPlist</key>
+                <string>ArtworkAnimation</string>
+                <key>label</key>
+                <string>Artwork Animation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string/>
+            </dict>
+
+            <dict>
+                <key>action</key>
+                <string>pushToView:</string>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>pushToPlist</key>
+                <string>:artworkPositionState</string>
+                <key>default</key>
+                <string>ArtworkPosition</string>
+                <key>label</key>
+                <string>Artwork Position &amp; Scale</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string/>
+            </dict>
+
+            <dict>
+                <key>action</key>
+                <string>pushToView:</string>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>pushToPlist</key>
+                <string>:controlsPositionState</string>
+                <key>default</key>
+                <string>MediaControlsPosition</string>
+                <key>label</key>
+                <string>Media Controls Position &amp; Scale</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/motuumls.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>key</key>
+                <string>kMLSMediaControlsPrimaryColor</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>label</key>
+                <string>Media Controls Primary Color</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/motuumls.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>key</key>
+                <string>kMLSMediaControlsSecondaryColor</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>label</key>
+                <string>Media Controls Secondary Color</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Remove Volume Slider</string>
+                <key>key</key>
+                <string>kMLSRemoveVolumeSlider</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Shuffle &amp; Repeat (alpha)</string>
+                <key>key</key>
+                <string>kMLSShuffleRepeat</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+        </array>
+        <key>title</key>
+        <string>Now Playing</string>
+    </dict>
+</plist>

@@ -1,0 +1,333 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+	<dict>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Enable Notification Cell Customization</string>
+				<key>key</key>
+				<string>kMLSNotificationCellsEnabled</string>
+				<key>default</key>
+				<false/>
+				<key>isGroupToggle</key>
+				<true/>
+				<key>sublabel</key>
+				<string>Customize Notification Cells System Wide</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>NotificationCells</string>
+				<key>label</key>
+				<string>Notification Cell Options</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>NotificationCellsBanner</string>
+				<key>label</key>
+				<string>Banner Cell Options</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>NotificationCellsWidget</string>
+				<key>label</key>
+				<string>Widget Cell Options</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Disable Hint Text On Notifications</string>
+				<key>key</key>
+				<string>kMLSNotificationHintText</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Disable Screen Wake For Notifications</string>
+				<key>key</key>
+				<string>kMLSLookLater</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Notification View Alignment/height</string>
+				<key>footerText</key>
+				<string>controls the vertical position and the height of the notifications scrollview</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>formatsDecimals</key>
+				<true/>
+				<key>seporatorHidden</key>
+				<true/>
+				<key>height</key>
+				<string>30</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<string>0.2</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>isDecimalPad</key>
+				<true/>
+				<key>key</key>
+				<string>kMLSNotificationOriginY</string>
+				<key>label</key>
+				<string>Notification Position Y</string>
+				<key>placeholder</key>
+				<string>0.2</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSliderCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<real>0.2</real>
+				<key>min</key>
+				<real>0</real>
+				<key>max</key>
+				<real>1</real>
+				<key>isContinuous</key>
+				<true/>
+				<key>showValue</key>
+				<false/>
+				<key>key</key>
+				<string>kMLSNotificationOriginY</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>leftImage</key>
+				<string>glyphs/up.png</string>
+				<key>rightImage</key>
+				<string>glyphs/down.png</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>formatsDecimals</key>
+				<true/>
+				<key>seporatorHidden</key>
+				<true/>
+				<key>height</key>
+				<string>30</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<string>0.8</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>isDecimalPad</key>
+				<true/>
+				<key>key</key>
+				<string>kMLSNotificationHeight</string>
+				<key>label</key>
+				<string>Notification Height</string>
+				<key>placeholder</key>
+				<string>0.8</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSliderCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<real>0.8</real>
+				<key>min</key>
+				<real>0</real>
+				<key>max</key>
+				<real>1</real>
+				<key>isContinuous</key>
+				<true/>
+				<key>showValue</key>
+				<false/>
+				<key>key</key>
+				<string>kMLSNotificationHeight</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>leftImage</key>
+				<string>glyphs/merge horizontal.png</string>
+				<key>rightImage</key>
+				<string>glyphs/split vertical.png</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Notification View Alignment/height</string>
+				<key>footerText</key>
+				<string>controls the vertical position and the height of the notifications scrollview while the now playing view is present</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>formatsDecimals</key>
+				<true/>
+				<key>seporatorHidden</key>
+				<true/>
+				<key>height</key>
+				<string>30</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<string>0.2</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>isDecimalPad</key>
+				<true/>
+				<key>key</key>
+				<string>kMLSNotificationWithMediaOriginY</string>
+				<key>label</key>
+				<string>Notification Position Y</string>
+				<key>placeholder</key>
+				<string>0.2</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSliderCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<real>0.2</real>
+				<key>min</key>
+				<real>0</real>
+				<key>max</key>
+				<real>1</real>
+				<key>isContinuous</key>
+				<true/>
+				<key>showValue</key>
+				<false/>
+				<key>key</key>
+				<string>kMLSNotificationWithMediaOriginY</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>leftImage</key>
+				<string>glyphs/up.png</string>
+				<key>rightImage</key>
+				<string>glyphs/down.png</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>formatsDecimals</key>
+				<true/>
+				<key>seporatorHidden</key>
+				<true/>
+				<key>height</key>
+				<string>30</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<string>0.2</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>isDecimalPad</key>
+				<true/>
+				<key>key</key>
+				<string>kMLSNotificationWithMediaHeight</string>
+				<key>label</key>
+				<string>Notification Height</string>
+				<key>placeholder</key>
+				<string>0.2</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSliderCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<real>0.8</real>
+				<key>min</key>
+				<real>0</real>
+				<key>max</key>
+				<real>1</real>
+				<key>isContinuous</key>
+				<true/>
+				<key>showValue</key>
+				<false/>
+				<key>key</key>
+				<string>kMLSNotificationWithMediaHeight</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>leftImage</key>
+				<string>glyphs/merge horizontal.png</string>
+				<key>rightImage</key>
+				<string>glyphs/split vertical.png</string>
+			</dict>
+
+		</array>
+		<key>title</key>
+		<string>Notifications</string>
+	</dict>
+</plist>

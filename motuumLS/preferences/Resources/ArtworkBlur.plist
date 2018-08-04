@@ -1,0 +1,427 @@
+<!--
+   kMLSArtworkBlurEnabled
+   kMLSArtworkBlurUseDominantColor
+   kMLSArtworkBlurTintColor
+   kMLSArtworkBlurRadius
+   kMLSArtworkBlurSaturation
+   kMLSArtworkBlurTransitionLength
+   kMLSArtworkBlurPanningSpeed
+   -->
+
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+  <dict>
+    <key>items</key>
+    <array>
+      <!--blur color-->
+
+      <dict>
+        <key>cell</key>
+        <string>PSSwitchCell</string>
+        <key>label</key>
+        <string>Enable Blurred Artwork Background</string>
+        <key>key</key>
+        <string>kMLSArtworkBlurEnabled</string>
+        <key>default</key>
+        <true/>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSwitchCell</string>
+        <key>label</key>
+        <string>Use Dominant Color For Tint</string>
+        <key>key</key>
+        <string>kMLSArtworkBlurUseDominantColor</string>
+        <key>default</key>
+        <true/>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSLinkCell</string>
+        <key>cellClass</key>
+        <string>CSColorDisplayCell</string>
+        <key>defaultsPath</key>
+        <string>/Library/PreferenceBundles/motuumls.bundle</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>key</key>
+        <string>kMLSArtworkBlurTintColor</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>label</key>
+        <string>Artwork Blur Tint Color</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSGroupCell</string>
+        <key>label</key>
+        <string>Blur Settings</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSEditTextCell</string>
+        <key>cellClass</key>
+        <string>CSPValueCell</string>
+        <key>formatsDecimals</key>
+        <true/>
+        <key>seporatorHidden</key>
+        <true/>
+        <key>height</key>
+        <string>30</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <string>12</string>
+        <key>detail</key>
+        <string>PSDetailController</string>
+        <key>isDecimalPad</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurRadius</string>
+        <key>label</key>
+        <string>Artwork Blur Radius</string>
+        <key>placeholder</key>
+        <string>12</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <real>12</real>
+        <key>min</key>
+        <real>0</real>
+        <key>max</key>
+        <real>20</real>
+        <key>showValue</key>
+        <false/>
+        <key>isContinuous</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurRadius</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>leftImage</key>
+        <string>glyphs/blur.png</string>
+        <key>rightImage</key>
+        <string>glyphs/blur filled.png</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSEditTextCell</string>
+        <key>cellClass</key>
+        <string>CSPValueCell</string>
+        <key>formatsDecimals</key>
+        <true/>
+        <key>seporatorHidden</key>
+        <true/>
+        <key>height</key>
+        <string>30</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <string>0.5</string>
+        <key>detail</key>
+        <string>PSDetailController</string>
+        <key>isDecimalPad</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurDominantSaturation</string>
+        <key>label</key>
+        <string>Dominant Color Intensity</string>
+        <key>placeholder</key>
+        <string>0.5</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <real>0.5</real>
+        <key>min</key>
+        <real>0</real>
+        <key>max</key>
+        <real>1</real>
+        <key>isContinuous</key>
+        <true/>
+        <key>showValue</key>
+        <false/>
+        <key>key</key>
+        <string>kMLSArtworkBlurDominantSaturation</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>leftImage</key>
+        <string>glyphs/saturation less.png</string>
+        <key>rightImage</key>
+        <string>glyphs/saturation more.png</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSEditTextCell</string>
+        <key>cellClass</key>
+        <string>CSPValueCell</string>
+        <key>formatsDecimals</key>
+        <true/>
+        <key>seporatorHidden</key>
+        <true/>
+        <key>height</key>
+        <string>30</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <string>12</string>
+        <key>detail</key>
+        <string>PSDetailController</string>
+        <key>isDecimalPad</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurSaturation</string>
+        <key>label</key>
+        <string>Image Saturation</string>
+        <key>placeholder</key>
+        <string>1</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <real>1</real>
+        <key>min</key>
+        <real>0</real>
+        <key>max</key>
+        <real>2</real>
+        <key>isContinuous</key>
+        <true/>
+        <key>showValue</key>
+        <false/>
+        <key>key</key>
+        <string>kMLSArtworkBlurSaturation</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>leftImage</key>
+        <string>glyphs/saturation less.png</string>
+        <key>rightImage</key>
+        <string>glyphs/saturation more.png</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSEditTextCell</string>
+        <key>cellClass</key>
+        <string>CSPValueCell</string>
+        <key>formatsDecimals</key>
+        <true/>
+        <key>seporatorHidden</key>
+        <true/>
+        <key>height</key>
+        <string>30</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <string>0</string>
+        <key>detail</key>
+        <string>PSDetailController</string>
+        <key>isDecimalPad</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurBrightness</string>
+        <key>label</key>
+        <string>Image Brightness</string>
+        <key>placeholder</key>
+        <string>0</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <real>0</real>
+        <key>min</key>
+        <real>-1</real>
+        <key>max</key>
+        <real>1</real>
+        <key>isContinuous</key>
+        <true/>
+        <key>showValue</key>
+        <false/>
+        <key>key</key>
+        <string>kMLSArtworkBlurBrightness</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>leftImage</key>
+        <string>glyphs/saturation less.png</string>
+        <key>rightImage</key>
+        <string>glyphs/saturation more.png</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSEditTextCell</string>
+        <key>cellClass</key>
+        <string>CSPValueCell</string>
+        <key>formatsDecimals</key>
+        <true/>
+        <key>seporatorHidden</key>
+        <true/>
+        <key>height</key>
+        <string>30</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <string>1</string>
+        <key>detail</key>
+        <string>PSDetailController</string>
+        <key>isDecimalPad</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurContrast</string>
+        <key>label</key>
+        <string>Image Contrast</string>
+        <key>placeholder</key>
+        <string>1</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <real>1</real>
+        <key>min</key>
+        <real>0</real>
+        <key>max</key>
+        <real>2</real>
+        <key>isContinuous</key>
+        <true/>
+        <key>showValue</key>
+        <false/>
+        <key>key</key>
+        <string>kMLSArtworkBlurContrast</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>leftImage</key>
+        <string>glyphs/saturation less.png</string>
+        <key>rightImage</key>
+        <string>glyphs/saturation more.png</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSGroupCell</string>
+        <key>label</key>
+        <string>Artwork Panning</string>
+        <key>footerText</key>
+        <string>Disabling the artwork panning animation will also center the artwork on the screen</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSwitchCell</string>
+        <key>label</key>
+        <string>Disable Panning Animation</string>
+        <key>key</key>
+        <string>kMLSArtworkAnimationDisabled</string>
+        <key>isInvertedGroupToggle</key>
+        <true/>
+        <key>default</key>
+        <true/>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSEditTextCell</string>
+        <key>cellClass</key>
+        <string>CSPValueCell</string>
+        <key>formatsDecimals</key>
+        <true/>
+        <key>seporatorHidden</key>
+        <true/>
+        <key>height</key>
+        <string>30</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <string>6</string>
+        <key>detail</key>
+        <string>PSDetailController</string>
+        <key>isDecimalPad</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurPanningSpeed</string>
+        <key>label</key>
+        <string>Artwork Panning Speed</string>
+        <key>placeholder</key>
+        <string>6</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <real>6</real>
+        <key>min</key>
+        <real>0</real>
+        <key>max</key>
+        <real>20</real>
+        <key>isContinuous</key>
+        <true/>
+        <key>showValue</key>
+        <false/>
+        <key>key</key>
+        <string>kMLSArtworkBlurPanningSpeed</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>leftImage</key>
+        <string>glyphs/speed less.png</string>
+        <key>rightImage</key>
+        <string>glyphs/speed more.png</string>
+      </dict>
+
+    </array>
+    <key>title</key>
+    <string>Artwork Blur</string>
+  </dict>
+</plist>

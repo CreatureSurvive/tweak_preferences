@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>entry</key>
+    <dict>
+      <key>bundle</key>
+      <string>bubbles</string>
+      <key>cell</key>
+      <string>PSLinkCell</string>
+      <key>detail</key>
+      <string>CSBPreferencesController</string>
+      <key>icon</key>
+      <string>SettingsIcon.png</string>
+      <key>isController</key>
+      <true/>
+      <key>label</key>
+      <string>Bubbles</string>
+      <key>headerString</key>
+      <string>Bubbles\nMake your Messages pop!\nby: CreatureSurvive</string>
+      <key>headerFont</key>
+      <string>.SFUIDisplay-Regular</string>
+      <key>primaryFontSize</key>
+      <real>36</real>
+      <key>secondaryFontSize</key>
+      <real>17</real>
+      <key>primaryColor</key>
+      <string>#74d69c</string>
+      <key>secondaryColor</key>
+      <string>#5c5555</string>
+      <key>packageID</key>
+      <string>com.creaturecoding.bubbles</string>
+      <key>repo</key>
+      <string>https://creaturesurvive.github.io/</string>
+      <key>policyTitle</key>
+      <string>Support Policy</string>
+      <key>policyMessage</key>
+      <string>Due to an overwhelming amount of support requests &amp; feature requests, I am now enforcing a strict support policy in all my projects. All Tweaks from CreatureSurvive (CreatureCoding) that contain a preference page will contain a support section at the bottom of the settings page. within this settings page, there will be a 'Report an Issue' button, all issues and feature requests must be submitted via the linked GitHub Issues page. If your seeking support for a tweak there will be an 'Email Support' link, this will automatically attach your current settings for the tweak, your tweak list, and Cydia logs. This is the only means that I will be answering support requests from this point on. If you do not agree with this policy, all support sections will be removed and you will not be able to receive any support for issues you may encounter. if you change your mind you can always access this policy by pressing the policy button in the navigation bar. Thank you for taking the time to read this policy, I won't bug you about this again unless there is an update to the policy.</string>
+      <key>policyDisableKey</key>
+      <string>support</string>
+      <key>policyDuration</key>
+      <integer>15</integer>
+    </dict>
+  </dict>
+</plist>

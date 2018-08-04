@@ -1,0 +1,169 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+	<dict>
+		<key>title</key>
+		<string>General Options</string>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Miscellaneous</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Disable Press To Unlock Text</string>
+				<key>key</key>
+				<string>kMLSCallToActionLabelDisabled</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Disable StatusBar Time</string>
+				<key>key</key>
+				<string>kMLSStatusBarTimeDisabled</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+			
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Force StatusBar Time</string>
+				<key>key</key>
+				<string>kMLSStatusBarTimeForced</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>iOS 11 PassCode style</string>
+				<key>key</key>
+				<string>kMLSPasscodeEnabled</string>
+				<key>default</key>
+				<false/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSColorDisplayCell</string>
+				<key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/motuumls.bundle</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>key</key>
+				<string>kMLSPrimaryLegibilityColor</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>label</key>
+				<string>StatusBar Text Color</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>isDecimalPad</key>
+				<true/>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<string>7</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>label</key>
+				<string>Lockscreen Dim Delay</string>
+				<key>placeholder</key>
+				<string>7</string>
+				<key>key</key>
+				<string>kMLSDimDelay</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Scroll Sensitivity</string>
+				<key>footerText</key>
+				<string>this setting adjusts scrolling sensitivity on the LockScreen. A lower value here equals higher sensitivity. This setting is only applied after a respring.</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSliderCell</string>
+				<key>defaults</key>
+				<string>com.creaturesurvive.motuumls</string>
+				<key>default</key>
+				<real>50</real>
+				<key>min</key>
+				<real>0</real>
+				<key>max</key>
+				<real>400</real>
+				<key>key</key>
+				<string>kMLSScrollSensitivity</string>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.motuumls.prefschanged</string>
+				<key>leftImage</key>
+				<string>glyphs/left.png</string>
+				<key>rightImage</key>
+				<string>glyphs/right.png</string>
+				<key>copyToKeys</key>
+				<dict>
+					<key>test1</key>
+					<string>A Test 1</string>
+					<key>test2</key>
+					<string>A Test 2</string>
+					<key>test3</key>
+					<string>A Test 3</string>
+					<key>test4</key>
+					<string>A Test 4</string>
+					<key>test5</key>
+					<string>A Test 5</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>respringWithAlert</string>
+				<key>cell</key>
+				<string>PSButtonCell</string>
+				<key>label</key>
+				<string>Respring</string>
+			</dict>
+
+		</array>
+	</dict>
+</plist>

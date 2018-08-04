@@ -1,0 +1,124 @@
+<!--
+   kMLSArtworkBlurEnabled
+   kMLSArtworkBlurUseDominantColor
+   kMLSArtworkBlurTintColor
+   kMLSArtworkBlurRadius
+   kMLSArtworkBlurSaturation
+   kMLSArtworkBlurTransitionLength
+   kMLSArtworkBlurPanningSpeed
+   -->
+
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+  <dict>
+    <key>items</key>
+    <array>
+
+      <dict>
+        <key>cell</key>
+        <string>PSLinkListCell</string>
+        <key>detail</key>
+        <string>CSListItemsController</string>
+        <key>label</key>
+        <string>Animate Artwork Change</string>
+        <key>key</key>
+        <string>kMLSArtworkAnimationOption</string>
+        <key>default</key>
+        <integer>0</integer>
+        <key>validTitles</key>
+        <array>
+          <string>None</string>
+          <string>Flip From Left</string>
+          <string>Flip From Right</string>
+          <string>
+            Curl Up
+          </string>
+          <string>Curl Down</string>
+          <string>Cross Dissolve</string>
+          <string>Flip From Top</string>
+          <string>Flip From Bottom</string>
+        </array>
+        <key>validValues</key>
+        <array>
+          <real>0</real>
+          <real>1</real>
+          <real>2</real>
+          <real>3</real>
+          <real>4</real>
+          <real>5</real>
+          <real>6</real>
+          <real>7</real>
+        </array>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSGroupCell</string>
+        <key>footerText</key>
+        <string>use these settings to adjust the artwork animation that plays when changing songs</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSEditTextCell</string>
+        <key>cellClass</key>
+        <string>CSPValueCell</string>
+        <key>formatsDecimals</key>
+        <true/>
+        <key>seporatorHidden</key>
+        <true/>
+        <key>height</key>
+        <string>30</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <string>0.25</string>
+        <key>detail</key>
+        <string>PSDetailController</string>
+        <key>isDecimalPad</key>
+        <true/>
+        <key>key</key>
+        <string>kMLSArtworkBlurTransitionLength</string>
+        <key>label</key>
+        <string>Animation Duration</string>
+        <key>placeholder</key>
+        <string>0.25</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+      </dict>
+
+      <dict>
+        <key>cell</key>
+        <string>PSSliderCell</string>
+        <key>defaults</key>
+        <string>com.creaturesurvive.motuumls</string>
+        <key>default</key>
+        <real>0.25</real>
+        <key>min</key>
+        <real>0</real>
+        <key>max</key>
+        <real>3</real>
+        <key>isContinuous</key>
+        <true/>
+        <key>showValue</key>
+        <false/>
+        <key>key</key>
+        <string>kMLSArtworkBlurTransitionLength</string>
+        <key>PostNotification</key>
+        <string>com.creaturesurvive.motuumls.prefschanged</string>
+        <key>leftImage</key>
+        <string>glyphs/speed less.png</string>
+        <key>rightImage</key>
+        <string>glyphs/speed more.png</string>
+      </dict>
+
+    </array>
+    <key>title</key>
+    <string>Artwork Animation</string>
+  </dict>
+</plist>

@@ -1,0 +1,337 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+    <dict>
+        <key>items</key>
+        <array>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Enable Banner Customization</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerCustomization</string>
+                <key>default</key>
+                <false/>
+                <key>sublabel</key>
+                <string>Customize Notification Banners</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>action</key>
+                <string>respringWithAlert</string>
+                <key>cell</key>
+                <string>PSButtonCell</string>
+                <key>label</key>
+                <string>Respring</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>Headers</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Remove Banner Headers</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerHeadersRemoved</string>
+                <key>default</key>
+                <false/>
+                <key>sublabel</key>
+                <string>Removes banner headers and their content</string>
+                <key>isInvertedGroupToggle</key>
+                <true/>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Dominant Color Banner Headers</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerHeadersColored</string>
+                <key>default</key>
+                <false/>
+                <key>sublabel</key>
+                <string>Colors the header based on the dominant icon color</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>height</key>
+                <string>30</string>
+                <key>default</key>
+                <string>0.5</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kMLSNotificationBannerHeadersBackgroundAlpha</string>
+                <key>label</key>
+                <string>Dominant Headers Color Alpha</string>
+                <key>placeholder</key>
+                <string>0.5</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>seporatorHidden</key>
+                <true/>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSliderCell</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>default</key>
+                <real>0.5</real>
+                <key>min</key>
+                <real>0</real>
+                <key>max</key>
+                <real>1</real>
+                <key>showValue</key>
+                <false/>
+                <key>isContinuous</key>
+                <true/>
+                <key>key</key>
+                <string>kMLSNotificationBannerHeadersBackgroundAlpha</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/motuumls.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerHeadersColoredCustom</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>label</key>
+                <string>Custom Header Tint Color</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>Banner Background</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Remove Banner Background</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerBackgroundRemoved</string>
+                <key>default</key>
+                <false/>
+                <key>sublabel</key>
+                <string>Removes banner background</string>
+                <key>isInvertedGroupToggle</key>
+                <true/>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Dominant Color Banner Background</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerBackgroundColored</string>
+                <key>default</key>
+                <false/>
+                <key>sublabel</key>
+                <string>Colors the background based on the dominant icon color</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>height</key>
+                <string>30</string>
+                <key>default</key>
+                <string>0.5</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kMLSNotificationBannerBackgroundAlpha</string>
+                <key>label</key>
+                <string>Dominant Background Color Alpha</string>
+                <key>placeholder</key>
+                <string>0.5</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>seporatorHidden</key>
+                <true/>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSliderCell</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>default</key>
+                <real>0.5</real>
+                <key>min</key>
+                <real>0</real>
+                <key>max</key>
+                <real>1</real>
+                <key>showValue</key>
+                <false/>
+                <key>isContinuous</key>
+                <true/>
+                <key>key</key>
+                <string>kMLSNotificationBannerBackgroundAlpha</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/motuumls.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerBackgroundColoredCustom</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>label</key>
+                <string>Custom Background Tint Color</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>Banner Text</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Force Legible Text</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerForceLegibleText</string>
+                <key>default</key>
+                <false/>
+                <key>sublabel</key>
+                <string>Force legible text color</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/motuumls.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerCustomTextColor</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>label</key>
+                <string>Custom Text Color</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Force Legible Header Text</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerHeaderForceLegibleText</string>
+                <key>default</key>
+                <false/>
+                <key>sublabel</key>
+                <string>Force legible text color on headers</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/motuumls.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturesurvive.motuumls</string>
+                <key>key</key>
+                <string>kMLSNotificationBannerHeaderCustomTextColor</string>
+                <key>PostNotification</key>
+                <string>com.creaturesurvive.motuumls.prefschanged</string>
+                <key>label</key>
+                <string>Custom Header Text Color</string>
+            </dict>
+
+        </array>
+        <key>title</key>
+        <string>Banners</string>
+    </dict>
+</plist>

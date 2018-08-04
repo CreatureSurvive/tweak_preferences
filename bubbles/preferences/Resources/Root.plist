@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>title</key>
+		<string>bubbles</string>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Enabled</string>
+				<key>key</key>
+				<string>kEnabled</string>
+				<key>sublabel</key>
+                <string>This switch does nothing right now</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.bubbles.prefs-changed</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.bubbles</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+			</dict>
+
+			<dict>
+                <key>cell</key>
+                <string>PSSegmentCell</string>
+                <key>key</key>
+                <string>kSchemeMode</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Dark</string>
+                    <string>Light</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <string>0</string>
+                    <string>1</string>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.bubbles.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.bubbles</string>
+            </dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Light</string>
+				<key>label</key>
+				<string>Light Configuration</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Dark</string>
+				<key>label</key>
+				<string>Dark Configuration</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>enabled</key>
+				<false/>
+				<key>label</key>
+				<string>Black Configuration (Coming Soon)</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>CreatureCoding © 2018</string>
+				<key>footerAlignment</key>
+				<integer>1</integer>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Support</string>
+				<key>label</key>
+				<string>Support, Donations &amp; Contact</string>
+				<key>key</key>
+				<string>support</string>
+			</dict>
+
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPBackupListViewController</string>
+				<key>isController</key>
+				<true/>
+				<key>PostNotification</key>
+				<string>com.creaturesurvive.bubbles.prefschanged</string>
+				<key>additionalDirectories</key>
+				<array>
+					<string>/User/Documents/bubbles/backups</string>
+				</array>
+				<key>defaultsPath</key>
+				<string>/Library/PreferenceBundles/bubbles.bundle/defaults.plist</string>
+				<key>label</key>
+				<string>Backup, Restore &amp; Reset</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPChangeLogController</string>
+				<key>isController</key>
+				<true/>
+				<key>label</key>
+				<string>ChangeLog</string>
+				<key>changes</key>
+				<array>
+				
+					<!-- 
+					UPDATE SUPPORT EMAIL VERSION 
+					UPDATE DEFAULT SETTINGS 
+					-->
+					<dict>
+						<key>0.2.2b</key>
+						<array>
+							<string>[Fixed] Conversation List background image had incorrect scale</string>
+							<string>[Fixed] Light Mode failed to apply</string>
+							<string>[Fixed] Light Background images setting Dark Background images</string>
+							<string>[Fixed] Bubbles being filled for short messages when 'bubble borders only' option was enabled</string>
+							<string>[Added] Settings changes automatically apply</string>
+							<string>[Added] Experimental Gradient Bubble option (please no bug reports for this feature, its still being developed)</string>
+							<string>[Added] Settings changes automatically apply</string>
+							<string>[Added] Option for square chat bubbles, doesn't work with borders only option (will be expanded soon)</string>
+							<string>[Changed] Internal work on iOS 10 support (Coming Soon)</string>
+						</array>
+					</dict>
+
+					<dict>
+						<key>0.2.0b</key>
+						<array>
+							<string>[Fixed] proper fix for Contact view by restoring blurred background</string>
+							<string>[Fixed] Compose view NavigationBar title text color</string>
+							<string>[Fixed] crash when using 3dTouch to set color from pasteboard</string>
+							<string>[Fixed] fixed directory creation for image picker</string>
+							<string>[Added] Compose view contact name color options (iMessage/SMS/default)</string>
+							<string>[Added] option for background image in the chat view</string>
+							<string>[Added] option for background image in the conversation list (this is experimental, and will be changing in the future)</string>
+							<string>[Added] warning in preferences when restoring defaults</string>
+							<string>[Added] image placeholder in backup details view</string>
+						</array>
+					</dict>
+
+					<dict>
+						<key>0.1.9b</key>
+						<array>
+							<string>[Added] option to disable blur on the input field background</string>
+							<string>[Added] option to color input field background</string>
+							<string>[Added] option to disable chat bubble tails</string>
+							<string>[Added] option to customize chat footer color (below input field)</string>
+							<string>[Added] option for bordered chat bubbles</string>
+							<string>[Fixed] App Drawer background color not working</string>
+							<string>[Fixed] Temporary fix for transparent Contact view (will fix background blur at another time)</string>
+						</array>
+					</dict>
+				
+				    <dict>
+						<key>0.1.7b</key>
+						<array>
+							<string>[Fixed] forgot to add the updated defaults in v0.1.6b, so here they are</string>
+							<string>[Fixed] typos in new Support Page</string>
+						</array>
+					</dict>
+
+					<dict>
+						<key>0.1.6b</key>
+						<array>
+							<string>[Change] completely removed original theming method in favor of the current method</string>
+							<string>[Change] lots of small tweaks to the default configuration</string>
+							<string>[Change] redesigned the support page</string>
+							<string>[Partial] started "Black Configuration"</string>
+							<string>[Added] link color options (SMS/iMessage/Incoming)</string>
+							<string>[Added] detail text color option for chat view</string>
+							<string>[Added] send button color (SMS/iMessage/Incoming)</string>
+							<string>[Added] typing dot color (typing bubble color is currently broken)</string>
+							<string>[Added] input field text color</string>
+							<string>[Added] input field fill color</string>
+							<string>[Added] input field border color</string>
+							<string>[Added] app browser background color</string>
+						</array>
+					</dict>
+					
+					<dict>
+						<key>0.1.4b</key>
+						<array>
+							<string>[Fixed] Navigation Bars not coloring properly</string>
+							<string>[Fixed] ugly gradients on message bubbles</string>
+							<string>[Fixed] message bubbles disappearing</string>
+							<string>[Fixed] message text color being set incorrectly</string>
+							<string>[Fixed] lag while scrolling in chat</string>
+							<string>[Fixed] colors defaulting to red</string>
+							<string>[Fixed] default values being null</string>
+							<string>[Fixed] backups not being created</string>
+							<string>[Fixed] color picker layout on iPhone X</string>
+							<string>[Added] proper coloring of details view (no options yet)</string>
+							<string>[Added] restore defaults button in backup section</string>
+							<string>[Change] huge improvements to performance</string>
+							<string>[Change] major refactoring of the project structure</string>
+							<string>[Change] tweaked default values</string>
+						</array>
+					</dict>
+
+					<dict>
+						<key>0.1.0b</key>
+						<array>
+							<string>Initial Release (beta)</string>
+							<string>Let there be color</string>
+							<string>Bubbles Everywhere</string>
+						</array>
+					</dict>
+				
+				</array>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSStaticTextCell</string>
+				<key>cellClass</key>
+				<string>CSPVersionCell</string>
+				<key>bundleID</key>
+				<string>com.creaturecoding.bubbles</string>
+				<key>label</key>
+				<string>Version:</string>
+			</dict>
+
+		</array>
+	</dict>
+</plist>
