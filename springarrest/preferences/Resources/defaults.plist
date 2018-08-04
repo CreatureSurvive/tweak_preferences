@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>kCSSAEnabled</key>
+		<true/>
+
+		<!-- portrait -->
+		<key>kCSSAColumns</key>
+		<integer>5</integer>
+		<key>kCSSARows</key>
+		<integer>6</integer>
+		<key>kCSSASidePadding</key>
+		<real>0</real>
+		<key>kCSSATopPadding</key>
+		<real>0</real>
+		<key>kCSSABottomPadding</key>
+		<real>0</real>
+		<key>kCSSAPortraitParallax</key>
+		<false/>
+
+		<!-- landscape -->
+		<key>kCSSALandscapeColumns</key>
+		<integer>5</integer>
+		<key>kCSSALandscapeRows</key>
+		<integer>6</integer>
+		<key>kCSSALandscapeSidePadding</key>
+		<real>0</real>
+		<key>kCSSALandscapeTopPadding</key>
+		<real>0</real>
+		<key>kCSSALandscapeBottomPadding</key>
+		<real>0</real>
+		<key>kCSSALandscapeParallax</key>
+		<false/>
+
+		<!-- icon -->
+		<key>kCSSAIconScale</key>
+		<real>1</real>
+		<key>kCSSAIconAlpha</key>
+		<real>1</real>
+		<key>kCSSABadgeAlpha</key>
+		<real>1</real>
+		<key>kCSSALabelAlpha</key>
+		<real>1</real>
+		<key>kCSSAIconBrightness</key>
+		<real>1</real>
+
+		<!-- control center -->
+		<key>kCSSAControlCenterScale</key>
+		<real>1</real>
+
+	</dict>
+</plist>

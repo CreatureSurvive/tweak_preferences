@@ -1,0 +1,539 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+    <dict>
+        <key>items</key>
+        <array>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>enabled</string>
+                <key>key</key>
+                <string>enabled</string>
+                <key>sublabel</key>
+                <string>Requires respring to fully take effect</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSegmentCell</string>
+                <key>key</key>
+                <string>iconLocation</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Top</string>
+                    <string>Bottom</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <string>0</string>
+                    <string>1</string>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>footerText</key>
+                <string>A respring is required for most changes to take effect</string>
+            </dict>
+
+            <dict>
+                <key>action</key>
+                <string>respringWithAlert</string>
+                <key>cell</key>
+                <string>PSButtonCell</string>
+                <key>label</key>
+                <string>Respring</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+            </dict>
+
+            <dict>
+                <key>action</key>
+                <string>CSC_showTestLockScreenNotification</string>
+                <key>cell</key>
+                <string>PSButtonCell</string>
+                <key>label</key>
+                <string>Send Test Notification</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>Badge</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkListCell</string>
+                <key>detail</key>
+                <string>CSListItemsController</string>
+                <key>label</key>
+                <string>Badge Style</string>
+                <key>key</key>
+                <string>numberStyle</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Disabled</string>
+                    <string>Below Icon</string>
+                    <string>Badge Style</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <integer>0</integer>
+                    <integer>1</integer>
+                    <integer>2</integer>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>key</key>
+                <string>lsBadgeBackgroundColor</string>
+                <key>label</key>
+                <string>Badge Background Color</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/Consolidation.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>key</key>
+                <string>lsBadgeTextColor</string>
+                <key>label</key>
+                <string>Badge Text Color</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/Consolidation.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>key</key>
+                <string>lsBadgeRadius</string>
+                <key>label</key>
+                <string>Badge Corner Radius (0 - 0.5)</string>
+                <key>placeholder</key>
+                <string>0</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>height</key>
+                <string>30</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>lsBadgeScale</string>
+                <key>label</key>
+                <string>Badge Scale (1 - 2)</string>
+                <key>placeholder</key>
+                <string>1</string>
+                <key>seporatorHidden</key>
+                <true/>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSliderCell</string>
+                <key>isContinuous</key>
+                <true/>
+                <key>key</key>
+                <string>lsBadgeScale</string>
+                <key>max</key>
+                <real>2</real>
+                <key>min</key>
+                <real>1</real>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>Selection Cell</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkListCell</string>
+                <key>detail</key>
+                <string>CSListItemsController</string>
+                <key>label</key>
+                <string>Icon Size</string>
+                <key>key</key>
+                <string>iconSize</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Small</string>
+                    <string>Medium</string>
+                    <string>Large</string>
+                    <string>Full Size</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <integer>0</integer>
+                    <integer>1</integer>
+                    <integer>2</integer>
+                    <integer>3</integer>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>key</key>
+                <string>lsMaterialColorUnselected</string>
+                <key>label</key>
+                <string>Unselected App Color</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/Consolidation.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>key</key>
+                <string>lsMaterialColor</string>
+                <key>label</key>
+                <string>Selected App Color</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/Consolidation.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>key</key>
+                <string>lsMaterialRadius</string>
+                <key>label</key>
+                <string>Selection Corner Radius (0 - 0.5)</string>
+                <key>placeholder</key>
+                <string>0</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>key</key>
+                <string>lsIconRadius</string>
+                <key>label</key>
+                <string>Icon Corner Radius (0 - 0.5)</string>
+                <key>placeholder</key>
+                <string>0</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>Pull To Clear</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>isGroupToggle</key>
+                <true/>
+                <key>label</key>
+                <string>Enable Pull To Clear</string>
+                <key>key</key>
+                <string>enablePullToClear</string>
+                <key>sublabel</key>
+                <string>Clears all notifications for the selected app</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>cellClass</key>
+                <string>CSColorDisplayCell</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>key</key>
+                <string>pullToClearColor</string>
+                <key>label</key>
+                <string>Pull To Clear Color</string>
+                <key>defaultsPath</key>
+                <string>/Library/PreferenceBundles/Consolidation.bundle</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>Resize Area</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>isGroupToggle</key>
+                <true/>
+                <key>label</key>
+                <string>Enable Resizing</string>
+                <key>key</key>
+                <string>verticalAdjustmentEnabled</string>
+                <key>sublabel</key>
+                <string>Enable resizing the notification area</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>isDecimalWithNegative</key>
+                <true/>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>key</key>
+                <string>verticalAdjustmentTop</string>
+                <key>label</key>
+                <string>Vertical Adjustment Top</string>
+                <key>placeholder</key>
+                <string>0</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>cellClass</key>
+                <string>CSPValueCell</string>
+                <key>formatsDecimals</key>
+                <true/>
+                <key>isDecimalWithNegative</key>
+                <true/>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>key</key>
+                <string>verticalAdjustmentBottom</string>
+                <key>label</key>
+                <string>Vertical Adjustment Bottom</string>
+                <key>placeholder</key>
+                <string>0</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+                <key>label</key>
+                <string>General</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Privacy Mode</string>
+                <key>key</key>
+                <string>privacyMode</string>
+                <key>sublabel</key>
+                <string>Hide notifications when they arrive</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Deselect On Lock</string>
+                <key>key</key>
+                <string>collapseOnLock</string>
+                <key>sublabel</key>
+                <string>Deselect app when locking/unlocking</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Show All Section</string>
+                <key>key</key>
+                <string>lsShowAllSection</string>
+                <key>sublabel</key>
+                <string>Adds Show All Section To LS</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Selection Animation</string>
+                <key>key</key>
+                <string>lsSpringAnimation</string>
+                <key>sublabel</key>
+                <string>Animate app selection view</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSLinkListCell</string>
+                <key>detail</key>
+                <string>CSListItemsController</string>
+                <key>label</key>
+                <string>When No App Is Selected</string>
+                <key>key</key>
+                <string>showAllWhenNotSelected</string>
+                <key>validTitles</key>
+                <array>
+                    <string>Hide All Notifications</string>
+                    <string>Show All Notifications</string>
+                </array>
+                <key>shortTitles</key>
+                <array>
+                    <string>Hide All</string>
+                    <string>Show All</string>
+                </array>
+                <key>validValues</key>
+                <array>
+                    <false/>
+                    <true/>
+                </array>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+        </array>
+        <key>title</key>
+        <string>LockScreen</string>
+    </dict>
+</plist>

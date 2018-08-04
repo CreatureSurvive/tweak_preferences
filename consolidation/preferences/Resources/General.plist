@@ -1,0 +1,91 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+    <dict>
+        <key>items</key>
+        <array>
+
+            <!-- <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+            </dict> -->
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Disable Auto Dismiss</string>
+                <key>key</key>
+                <string>disableAutomaticDismiss</string>
+                <key>sublabel</key>
+                <string>Prevent notifications from removing themselves</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Always Send To LockScreen</string>
+                <key>key</key>
+                <string>alwaysSendToLockscreen</string>
+                <key>sublabel</key>
+                <string>send notifications to lockscreen even while unlocked</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Disable Hint Text</string>
+                <key>key</key>
+                <string>disableHintText</string>
+                <key>sublabel</key>
+                <string>disable "press/slide to view" text</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Tap To Open</string>
+                <key>key</key>
+                <string>tapToOpen</string>
+                <key>sublabel</key>
+                <string>tap notifications to open them</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.consolidation.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.consolidation</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+            </dict>
+
+            <dict>
+                <key>action</key>
+                <string>respringWithAlert</string>
+                <key>cell</key>
+                <string>PSButtonCell</string>
+                <key>label</key>
+                <string>Respring</string>
+            </dict>
+
+        </array>
+        <key>title</key>
+        <string>General</string>
+    </dict>
+</plist>

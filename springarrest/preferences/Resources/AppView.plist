@@ -1,0 +1,107 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+    <dict>
+        <key>title</key>
+        <string>App View</string>
+        <key>items</key>
+        <array>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSAIconScale</string>
+                <key>label</key>
+                <string>Icon Scale</string>
+                <key>placeholder</key>
+                <string>1</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSAIconBrightness</string>
+                <key>label</key>
+                <string>Icon Brightness</string>
+                <key>placeholder</key>
+                <string>1</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSAIconAlpha</string>
+                <key>label</key>
+                <string>Icon Alpha</string>
+                <key>placeholder</key>
+                <string>1</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSABadgeAlpha</string>
+                <key>label</key>
+                <string>Badge Alpha</string>
+                <key>placeholder</key>
+                <string>1</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSALabelAlpha</string>
+                <key>label</key>
+                <string>Label Alpha</string>
+                <key>placeholder</key>
+                <string>1</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+        </array>
+    </dict>
+</plist>

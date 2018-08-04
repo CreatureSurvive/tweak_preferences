@@ -1,0 +1,137 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+    <dict>
+        <key>title</key>
+        <string>Portrait</string>
+        <key>items</key>
+        <array>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isNumeric</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSAColumns</string>
+                <key>label</key>
+                <string>Columns</string>
+                <key>placeholder</key>
+                <string>5</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isNumeric</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSARows</string>
+                <key>label</key>
+                <string>Rows</string>
+                <key>placeholder</key>
+                <string>6</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSASidePadding</string>
+                <key>label</key>
+                <string>Side Padding</string>
+                <key>placeholder</key>
+                <string>35</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSATopPadding</string>
+                <key>label</key>
+                <string>Top Padding</string>
+                <key>placeholder</key>
+                <string>15</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSEditTextCell</string>
+                <key>detail</key>
+                <string>PSDetailController</string>
+                <key>isDecimalPad</key>
+                <true/>
+                <key>key</key>
+                <string>kCSSABottomPadding</string>
+                <key>label</key>
+                <string>Bottom Padding</string>
+                <key>placeholder</key>
+                <string>15</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSButtonCell</string>
+                <key>cellClass</key>
+                <string>CSPSideImageCell</string>
+                <key>height</key>
+                <string>81</string>
+                <key>key</key>
+                <string>kCSSAPortraitWallpaper</string>
+                <key>label</key>
+                <string>Portrait Wallpaper</string>
+                <key>storePath</key>
+                <string>/User/Documents/SpringArrest/portrait_wallpaper.png</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Enable Parallax</string>
+                <key>key</key>
+                <string>kCSSAPortraitParallax</string>
+                <key>sublabel</key>
+                <string>Enable wallpaper parallax effect</string>
+                <key>PostNotification</key>
+                <string>com.creaturecoding.springarrest.prefschanged</string>
+                <key>defaults</key>
+                <string>com.creaturecoding.springarrest</string>
+            </dict>
+
+        </array>
+    </dict>
+</plist>

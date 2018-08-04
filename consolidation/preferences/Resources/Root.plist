@@ -1,0 +1,215 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+	<dict>
+		<key>title</key>
+		<string>Consolidation</string>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Enabled</string>
+				<key>key</key>
+				<string>kPTCEnabled</string>
+				<key>isGroupToggle</key>
+				<true/>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.consolidation.prefschanged</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.consolidation</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>LockScreen</string>
+				<key>label</key>
+				<string>LockScreen</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>NotificationCenter</string>
+				<key>label</key>
+				<string>Notification Center</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>General</string>
+				<key>label</key>
+				<string>General</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>CreatureCoding © 2017</string>
+				<key>footerAlignment</key>
+				<integer>1</integer>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Support</string>
+				<key>label</key>
+				<string>Support &amp; Creator</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPChangeLogController</string>
+				<key>isController</key>
+				<true/>
+				<key>label</key>
+				<string>ChangeLog</string>
+				<key>changes</key>
+				<array>
+					<dict>
+						<key>alpha 8</key>
+						<array>
+							<string>Fixed support for StatusPeek</string>
+							<string>Fixed decimal formatting in preferences for non english languages</string>
+							<string>Fixed a crash that would occur at random times when receiving notifications</string>
+						</array>
+					</dict>
+					<dict>
+						<key>alpha 7</key>
+						<array>
+							<string>Fixed ‘Disable Auto Dismiss’ this option now prevents notifications from being clear on the LS unless manually cleared (perpetual)</string>
+							<string>Added conflict with perpetual10Lite</string>
+							<string>Added initial support for CalendarForLockscreen2 (its still a little buggy)</string>
+							<string>Added version number on the root preference page</string>
+							<string>Fixed some issues with the default colors</string>
+							<string>Added option to disable the animation when selecting apps</string>
+							<string>Added option to change badge size</string>
+							<string>Adjusted badge position to look more like a badge</string>
+						</array>
+					</dict>
+					<dict>
+						<key>alpha 6</key>
+						<array>
+							<string>Updated Compatibility with libCSPreferences</string>
+							<string>Added Tap To Open feature for opening notifications with a tap</string>
+							<string>Added respring option in all the settings pages (a respring is required for most changes to take effect)</string>
+							<string>Changed keyboard type in preferences to decimal pad, and added a negative toggle for fields requiring negatives</string>
+							<string>Fixed coloring option for selection view</string>
+							<string>Added unselected app color option for setting different colors for app selection view</string>
+							<string>Added option to disable the ‘All Notifications' section</string>
+							<string>Added option to disable hiding of the chevron in Notification Center</string>
+							<string>Added ColorBadges support back in</string>
+							<string>Refactored App View to better support loading of preferences</string>
+							<string>Fixed a few bugs in the IconProvider. there was an issue where icons would randomly stop loading, that should be fixed now</string>
+							<string>Fixed Vertical Adjustment options not applying in some cases</string>
+							<string>Fixed issue where the NC would use the settings for the lockscreen</string>
+							<string>Fixed issue where NC was stuck with below style icons</string>
+							<string>Fixed issue where disabling LS or NC would break user interaction</string>
+							<string>Hopefully fixed crash that would sometimes occur when receiving/removing notifications (you may now receive an alert showing an error message, this is intentional)</string>
+							<string>Slowly getting rid of ugly global variables, I don’t care for those</string>
+							<string>Hopefully fixed issue where swiping notifications would not always invoke the notification</string>
+						</array>
+					</dict>
+					<dict>
+						<key>alpha 5</key>
+						<array>
+							<string>Rewrote the App Selection View from the ground up using MVC guidelines</string>
+							<string>Fixed privacy mode allowing the notification to flash on screen briefly</string>
+							<string>Added Badge Customization options (native badges will be added during beta)</string>
+							<string>Added selection view customization options</string>
+							<string>Fixed selection vie being cut off when selecting large as the icon size</string>
+							<string>Added an all notifications section which will be replacing (Show all when not selected)</string>
+							<string>Major performance improvements throughout the tweak</string>
+							<string>Added iPhone 7 Taptic support (legacy haptics will be added in the future)</string>
+							<string>Added an internal icon provider library for fetching icons (no longer depends on AppList)</string>
+							<string>Improved caching of icons</string>
+							<string>Improved icon fetching (should no longer be capable of missing icons)</string>
+							<string>Improved layout of cells, its now a bit faster and doesn't shrink the cells like in alpha 4</string>
+							<string>Resprings are annoying I know, live reloading is planned for beta phases, some options already support live reloading</string>
+							<string>Improved layout constraints, hopefully will fix some layout issues on the LockScreen</string>
+							<string>Adjusted the Notification Center layout down a bit</string>
+							<string>Probably a lot more that I've already forgotten since alpha 5 took so long to prepare</string>
+						</array>
+					</dict>
+					<dict>
+						<key>alpha 4</key>
+						<array>
+							<string>fixed enable switches not working as intended (the global enable switch is still broken)</string>
+							<string>everything is now laid out using constraints, this should fix a lot of wonky layout issues</string>
+							<string>bunch of small fixes and shuffling of the preferences</string>
+							<string>added proper depiction</string>
+							<string>tons of refactoring and tiny little optimizations</string>
+						</array>
+					</dict>
+					<dict>
+						<key>alpha 3</key>
+						<array>
+							<string>most of the LockScreen portion of the tweak has been rewritten</string>
+							<string>the bug causing password prompt to appear should now be completely fixed</string>
+							<string>all notifications will now have icons (any missing icons will use the small image from the notification itself, i'm working on finding larger versions.) for now some icons will look blurry</string>
+							<string>added option to send all notifications to the LockScreen even while unlocked</string>
+							<string>added option to prevent notifications from auto-dismissing such as when you launch an app all its notifications wont be cleared</string>
+							<string>improved notification area resizing and positioning, it should no longer break scrolling</string>
+							<string>show all when not selected is not broken, it just doesn't work when privacyMode is enabled</string>
+							<string>privacy mode is mostly fixed, though it will still flash on screen for a brief moment when receiving notifications</string>
+							<string>further improved performance of pull to clear</string>
+						</array>
+					</dict>
+					<dict>
+						<key>alpha 2</key>
+						<array>
+							<string>converted the project to ARC (no more double pointers)</string>
+							<string>fixed password prompt nagging</string>
+							<string>added privacy mode back in (requires Deselect on Unlock to be enabled in order to work correctly) will improve later</string>
+							<string>added vertical adjustment options for notification area</string>
+							<string>greatly improved handling of pull to clear (i did notice it would not always clear notifications from Extender Reloaded) let me know if your having isses with this</string>
+							<string>major refactoring throughout the project</string>
+							<string>added option to disable hint text ('press/slide to open' text on notifications)</string>
+							<string>added option to color the pull to clear (x)</string>
+							<string>added option to color app selection color</string>
+							<string>libCSColorPicker is now used in this project, and is added as a dependency. this should fix the preference bundle errors that some of you were having</string>
+						</array>
+					</dict>
+					<dict>
+						<key>alpha 1</key>
+						<array>
+							<string>initial release</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSStaticTextCell</string>
+				<key>cellClass</key>
+				<string>CSPVersionCell</string>
+				<key>bundleID</key>
+				<string>com.creaturecoding.consolidation</string>
+				<key>label</key>
+				<string>Version:</string>
+			</dict>
+
+		</array>
+	</dict>
+</plist>

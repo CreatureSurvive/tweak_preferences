@@ -1,0 +1,16 @@
+{
+  entry = {
+	bundle = Consolidation;
+	cell = PSLinkCell;
+	detail = CSPListController;
+	icon = icon.png;
+	isController = 1;
+	label = Consolidation;
+	headerString = "Consolidation\nby: CreatureSurvive";
+  headerFont = ".SFUIDisplay-Regular";
+  primaryFontSize = 36;
+  secondaryFontSize = 17;
+  primaryColor = "#58a1c4";
+  secondaryColor = "#5c5555";
+    };
+}

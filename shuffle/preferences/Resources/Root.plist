@@ -1,0 +1,246 @@
+<?xml version=1.0 encoding=UTF-8?>
+<!DOCTYPE plist PUBLIC -//Apple//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd>
+<plist version=1.0>
+	<dict>
+		<key>title</key>
+		<string>shuffle</string>
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Enabled</string>
+				<key>key</key>
+				<string>kEnabled</string>
+				<key>isGroupToggle</key>
+				<true/>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.shuffle.prefs-changed</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.shuffle</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>label</key>
+				<string>Enable 3DTouch</string>
+				<key>key</key>
+				<string>k3DEnabled</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.shuffle.prefs-changed</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.shuffle</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.shuffle</string>
+				<key>default</key>
+				<string>Apps</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>label</key>
+				<string>Apps Group Name</string>
+				<key>placeholder</key>
+				<string>Apps</string>
+				<key>key</key>
+				<string>kAppsGroupName</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.shuffle.prefs-changed</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.shuffle</string>
+				<key>default</key>
+				<string>Tweaks</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>label</key>
+				<string>Tweaks Group Name</string>
+				<key>placeholder</key>
+				<string>Tweaks</string>
+				<key>key</key>
+				<string>kTweaksGroupName</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.shuffle.prefs-changed</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.shuffle</string>
+				<key>default</key>
+				<string>Preference Bundles</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>label</key>
+				<string>Bundles Group Name</string>
+				<key>placeholder</key>
+				<string>Preference Bundles</string>
+				<key>key</key>
+				<string>kBundlesGroupName</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.shuffle.prefs-changed</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.shuffle</string>
+				<key>default</key>
+				<string>Package Dylibs</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>label</key>
+				<string>Dylibs Group Name</string>
+				<key>placeholder</key>
+				<string>Package Dylibs</string>
+				<key>key</key>
+				<string>kDylibsGroupName</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.shuffle.prefs-changed</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>cellClass</key>
+				<string>CSPValueCell</string>
+				<key>defaults</key>
+				<string>com.creaturecoding.shuffle</string>
+				<key>default</key>
+				<string>Debian Packages</string>
+				<key>detail</key>
+				<string>PSDetailController</string>
+				<key>label</key>
+				<string>Packages Group Name</string>
+				<key>placeholder</key>
+				<string>Debian Packages</string>
+				<key>key</key>
+				<string>kPackagesGroupName</string>
+				<key>PostNotification</key>
+				<string>com.creaturecoding.shuffle.prefs-changed</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>CreatureCoding © 2017</string>
+				<key>footerAlignment</key>
+				<integer>1</integer>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Support</string>
+				<key>label</key>
+				<string>Support &amp; Creator</string>
+			</dict>
+
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPBackupListViewController</string>
+				<key>isController</key>
+				<true/>
+				<key>label</key>
+				<string>Backup &amp; Restore</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPChangeLogController</string>
+				<key>isController</key>
+				<true/>
+				<key>label</key>
+				<string>ChangeLog</string>
+				<key>changes</key>
+				<array>
+					<dict>
+						<key>0.6.6b</key>
+						<array>
+							<string>Added icons for preference bundles with missing icons</string>
+							<string>Added icons for Packages and dylibs sections</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.6.5b</key>
+						<array>
+							<string>Hotfix for issue where packages marked as 'Ignore Upgrades' would cause the settings app to crash when viewing the package info</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.6.4b</key>
+						<array>
+							<string>Added 'App Storage' section to the Apps group</string>
+							<string>Added 'Tweak Dylibs' section to the tweaks group</string>
+							<string>Added 'Debian Packages' section to the tweaks group</string>
+							<string>Added 'Status' section to DPKG group for viewing package details</string>
+							<string>Added option to remove debs</string>
+							<string>Added option to disable tweaks</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.5.9b</key>
+						<array>
+							<string>Added settings icon</string>
+							<string>Added option to disable 3DTouch (doesn't disable within libCSPreferences bundles)</string>
+							<string>Added options to enable/disable individual tweak preference bundles.</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.5.7b</key>
+						<array>
+							<string>Added 3DTouch support throughout the Settings app</string>
+						</array>
+					</dict>
+					<dict>
+						<key>0.5.0b</key>
+						<array>
+							<string>initial release</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSStaticTextCell</string>
+				<key>cellClass</key>
+				<string>CSPVersionCell</string>
+				<key>bundleID</key>
+				<string>com.creaturecoding.shuffle</string>
+				<key>label</key>
+				<string>Version:</string>
+			</dict>
+
+		</array>
+	</dict>
+</plist>

@@ -1,0 +1,16 @@
+{
+entry = {
+bundle = SpringArrest;
+cell = PSLinkCell;
+detail = CSPListController;
+icon = icon.png;
+isController = 1;
+label = SpringArrest;
+headerString = "SpringArrest\nby: CreatureSurvive";
+headerFont = ".SFUIDisplay-Regular";
+primaryFontSize = 36;
+secondaryFontSize = 17;
+primaryColor = "#FFB000";
+secondaryColor = "#5c5555";
+};
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>kCSTAEnabled</key>
+		<true/>
+
+		<key>kCSTADuration</key>
+		<real>0.5</real>
+		<key>kCSTADelay</key>
+		<real>0</real>
+		<key>kCSTADamping</key>
+		<real>0.8</real>
+		<key>kCSTAVelocity</key>
+		<real>0.2</real>
+
+
+	</dict>
+</plist>

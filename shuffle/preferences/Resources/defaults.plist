@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>kEnabled</key>
+		<true/>
+
+		<key>kTweaksGroupName</key>
+		<string>Tweaks</string>
+		<key>kAppsGroupName</key>
+		<string>Apps</string>
+		<key>kBundlesGroupName</key>
+		<string>Preference Bundles</string>
+		<key>kDylibsGroupName</key>
+		<string>Package Dylibs</string>
+		<key>kPackagesGroupName</key>
+		<string>Debian Packages</string>
+
+		<key>k3DEnabled</key>
+		<true/>
+
+
+	</dict>
+</plist>

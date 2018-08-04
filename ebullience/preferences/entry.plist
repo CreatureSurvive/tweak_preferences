@@ -1,0 +1,16 @@
+{
+  entry = {
+	bundle = ebullience;
+	cell = PSLinkCell;
+	detail = CSPListController;
+	icon = icon.png;
+	isController = 1;
+	label = ebullience;
+	headerString = "ebullience\nby: CreatureSurvive";
+  headerFont = ".SFUIDisplay-Regular";
+  primaryFontSize = 36;
+  secondaryFontSize = 17;
+  primaryColor = "#61BF8E";
+  secondaryColor = "#5c5555";
+    };
+}

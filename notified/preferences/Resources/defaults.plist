@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CSN_Amount</key>
+		<integer>20</integer>
+		<key>CSN_Title</key>
+		<string>Notified</string>
+		<key>CSN_Subtitle</key>
+		<string>Test Notification</string>
+		<key>CSN_Message</key>
+		<string>Bleep Bloop Blop</string>
+		<key>CSN_DefaultAction</key>
+		<string>prefs:root=Notified</string>
+
+	</dict>
+</plist>
